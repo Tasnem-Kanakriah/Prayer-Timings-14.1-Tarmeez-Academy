@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tillana:wght@400;500;600;700;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #dfe6da;
+    color: #3c4b2e;
+    font-family: "Tillana", system-ui;
+}
+h1 {
+    margin-top: 28px;
+    text-align: center;
+}
+.country, .day, .date {
+    display: flex;
+    justify-content: center;
+    gap: 0 10px;
+    margin-top: 50px;
+    border: 2px solid ;
+}
+.country {
+    background: #cbd5c0;
+    border-radius: 50px;
+    padding: 10px;
+    width: 78%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.city.active {
+    box-shadow: 0 0 10px 5px rgb(82, 74, 74);
+}
+.country h2 {
+    padding: 2px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    background-color: #9caf88;
+}
+.day {
+    background: #cbd5c0;
+    border-radius: 50px;
+    padding: 8px;
+    width: 28%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.day h2 {
+    width: 98%;
+    text-align: center;
+    border-radius: 50px;
+    background-color: #9caf88;
+    border: 2px solid ;
+}
+.date {
+    padding: 8px 0px;
+    border-radius: 50px;
+    background: #cbd5c0;
+    width: 20%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.date input {
+    padding: 2px 8px;
+    font-size: 20px;
+    border-radius: 50px;
+    width: 92%;
+    background-color: #9caf88;
+    border: none;
+    border: 2px solid ;
+    font-weight: 600;
+    font-family: "Tillana", system-ui;
+    color: #3c4b2e;
+}
+.date input:focus {
+    outline: none ;
+}
+.date input::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+}
+.container {
+    width: 50%;
+    padding: 6px 2px;
+    margin: 0 auto;
+    margin-top: 30px;
+    background: #cbd5c0;
+    border-radius: 50px;
+    border: 2px solid ;
+}
+.content {
+    padding: 10px 100px;
+    margin: 10px;
+    border-radius: 50px;
+    background-color: #9caf88;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid ;
+}
+
+@media (max-width : 420px) {
+    .country {
+        width: 98%;
+        padding: 6px 0;
+    }
+    .country h2 {
+        font-size: 14px;
+        padding: 4px 4px;
+    }
+    .day {
+        width: 60%;
+        margin-top: 30px;
+    }
+    .day h2 {
+        font-size: 20px;
+    }
+    .date {
+        width: 46%;
+        margin-top: 30px;
+    }
+    .date input {
+        font-size: 18px;
+    }
+    .container {
+        width: 94%;
+        margin-top: 50px;
+    }
+    .content {
+        padding: 10px 50px;
+        font-size: 14px;
+    }
+}

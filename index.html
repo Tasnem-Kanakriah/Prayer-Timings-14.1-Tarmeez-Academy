@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Prayer Timings</h1>
+
+    <div class="country">
+        <h2 onclick="clickActive(this)" class="city damascus active">Damascus</h2>
+        <h2 onclick="clickActive(this)" class="city beijing">Beijing</h2>
+        <h2 onclick="clickActive(this)" class="city dubai">Dubai</h2>
+        <h2 onclick="clickActive(this)" class="city riyadh">Riyadh</h2>
+        <h2 onclick="clickActive(this)" class="city kuwait">Kuwait</h2>
+    </div>
+
+    <div class="day">
+        <h2></h2>
+    </div>
+
+    <div class="date">
+        <input type="date">
+    </div>
+
+    <div class="container">
+        <div class="content fajr"><h2>Fajr</h2><h3></h3></div>
+        <div class="content sunrise"><h2>Sunrise</h2><h3></h3></div>
+        <div class="content dhuhr"><h2>Dhuhr</h2><h3></h3></div>
+        <div class="content asr"><h2>Asr</h2><h3></h3></div>
+        <div class="content maghrib"><h2>Maghrib</h2><h3></h3></div>
+        <div class="content isha"><h2>Isha</h2><h3></h3></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+
+</body>
+
+</html>
